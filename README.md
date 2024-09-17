@@ -28,10 +28,12 @@ To deploy a pre-trained or fine-tuned model using **Hugging Face Spaces**, makin
 ## Approach
 
 ### Model Selection
+
 - **Translation Model**:
   ***For Translation I have researched 5 models out of that I have concluded one model***
   [facebook/mbart-large-50-many-to-one-mmt](https://huggingface.co/facebook/mbart-large-50-many-to-one-mmt) for Tamil to English translation.
--**Content and image prompt generation model**:
+  
+- **Content and image prompt generation model**:
   ***For this I have tried and applied 4 different model You can choose the model as per your preference and i have provide the link for Groq you can find the model used in documentation***
   [Groq API](https://console.groq.com/playground)
   
