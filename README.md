@@ -1,52 +1,65 @@
-EDA of Global Electronics Data Project
+**TransArt: A Multimodal Application for Vernacular Language Translation and Image Synthesis**
 
 **Overview**
 
-This project is my second capstone project, focusing on performing an in-depth Exploratory Data Analysis (EDA) on Global Electronics' business data. The goal is to derive actionable insights and provide strategic recommendations to enhance customer satisfaction, optimize operations, and drive business growth. The analysis leverages various datasets related to customers, products, sales, stores, and currency exchange rates, with the findings presented in an insightful Power BI dashboard.
+This is my 5th project.The **TransArt Project** is designed to demonstrate the integration of language translation and creative AI by converting Tamil text into English and generating relevant Text content and images based on the translated content. This project showcases how deep learning, transformers, and Hugging Face models can be used to bridge the gap between language processing and visual content generation.
 
 **Skills Gained**
-Throughout this project, I applied and developed the following skills:
 
-* Data Cleaning and Preprocessing
-* Exploratory Data Analysis (EDA)
-* Python Programming
-* Data Management with SQL
-* Data Visualization with Power BI
-These skills were crucial in uncovering valuable insights that could significantly impact the company’s revenue and overall performance.
+- Deep Learning
+- Transformer Models
+- Hugging Face APIs
+- Streamlit Web Applications
+- Python Programming
 
 **Problem Statement**
+TransArt aims to develop a user-friendly, web-based application that can:
+1. Translate text from Tamil to English using a neural machine translation model.
+2. Produce creative written content based on the translated text
+3. Generate images based on the translated English text using a text-to-image model.Enriching multimedia offerings.
 
 **Objective**
-
-As a member of Global Electronics' data analytics team, I was tasked with conducting a comprehensive Exploratory Data Analysis (EDA) to identify key insights from the company’s data. The primary objective was to provide actionable recommendations that can boost customer satisfaction, streamline operations, and support the company’s growth objectives.
-
-**Project Scope**
-
-Global Electronics, a leading retailer in the consumer electronics market, provided several datasets containing critical information about their customers, products, sales, stores, and currency exchange rates. The scope of this project includes:
-
-**Data Cleaning and Preprocessing:** Ensuring data quality and preparing it for analysis.
-**Exploratory Data Analysis (EDA):** Uncovering trends, patterns, and correlations within the data.
-**Data Visualization:** Presenting findings through intuitive visualizations using Power BI.
-**Actionable Recommendations:** Delivering insights that can be translated into strategic actions for the company.
+To deploy a pre-trained or fine-tuned model using **Hugging Face Spaces**, making it accessible through a web application built with **Streamlit**.
 
 **Business Use Cases**
-The analysis of Global Electronics' data serves multiple business use cases:
 
-* Marketing Strategies: Identifying customer segments and behaviors to tailor marketing campaigns and promotions.
-* Inventory Management: Optimizing stock levels based on sales trends and product demand.
-* Sales Forecasting: Improving sales predictions to guide business planning and resource allocation.
-* Store Expansion and Optimization: Recommending potential store locations and operational improvements.
+- **Educational Tools**: Enhance learning by combining translated text with relevant images for better understanding.
+- **Creative Content Generation**: Streamline the creation of visual content for digital marketing, presentations, or educational materials.
 
-**Insights and Recommendations**
+**Approach**
 
-The EDA revealed several key insights that can significantly benefit Global Electronics:
+**Model Selection**
 
-* Customer Behavior: Identified high-value customer segments and their purchasing patterns.
-* Product Performance: Highlighted top-performing products and those needing strategic repositioning.
-* Sales Trends: Discovered seasonal and regional sales trends that can inform marketing and inventory decisions.
-* Store Performance: Analyzed store data to suggest areas for expansion and improvement.
-Other than this there are lot of insights I have gathered which was presented in Power BI
+- **Translation Model**:
+  ***For Translation I have researched 5 models out of that I have concluded one model***
+  [facebook/mbart-large-50-many-to-one-mmt](https://huggingface.co/facebook/mbart-large-50-many-to-one-mmt) for Tamil to English translation.
+  
+- **Content and image prompt generation model**:
+  ***For this I have tried and applied 4 different model You can choose the model as per your preference and i have provide the link for Groq you can find the model used in documentation***
+  [Groq API](https://console.groq.com/playground)
+  
+- **Image Generation Model**:
+  ***For this I have tried and applied 3 different model You can choose the model as per your preference you can find the model used in documentation***
+  [FLUX.1-schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell) for generating images from the translated English text.
 
-**Conclusion**
+**Application Development**
 
-The EDA of Global Electronics' data provided valuable insights that can directly contribute to the company’s strategic decision-making. By leveraging these findings, Global Electronics can refine its marketing, inventory management, sales forecasting, and international pricing strategies, ultimately driving increased customer satisfaction and revenue growth. The project showcases the powerful impact of data-driven decision-making in a competitive retail environment.
+- **Frontend**: Built with Streamlit to provide an interactive user interface.
+- **Backend**: Powered by Hugging Face APIs for translation and image generation and for content and prompt generation I have used a models through Groq API.
+
+**Deployment**
+- Deployed on **Hugging Face Spaces**, offering a scalable, accessible web-based solution.
+
+**Features**
+
+- **Text Translation**: Translates Tamil input into English using a neural machine translation model.
+- **Image Generation**: Automatically generates images based on the translated text using a pre-trained text-to-image model.
+- **Creative Text Generation**: Produces English creative text that complements the visual output.
+
+**Results**
+- **Functional Web Application**: Provides a seamless, user-friendly interface for translation,content and image generation.
+- **Scalable Deployment**: Easily deployable and scalable through Hugging Face Spaces.
+  
+## App Link
+
+[FusionMind-Multimodel](https://huggingface.co/spaces/Santhosh1325/FusionMind_TransArt_V2)
